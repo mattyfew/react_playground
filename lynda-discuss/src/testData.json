@@ -1,0 +1,22 @@
+{
+    "threads" : [
+        {
+            "id": 1,
+            "category": "idea",
+            "name": "This is cool",
+            "text": "blah blha blhasd"
+        },
+        {
+            "id": 2,
+            "category": "topic",
+            "name": "This is rad",
+            "text": "blah blha blhasd"
+        },
+        {
+            "id": 3,
+            "category": "yo",
+            "name": "This is hip",
+            "text": "blah blha asdfdsasdf"
+        }
+    ]
+}
