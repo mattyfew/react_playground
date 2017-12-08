@@ -1,13 +1,11 @@
-const express = require('express')
-const React = require('react')
-const renderToString = require('react-dom/server').renderToString
-const Home = require('./client/components/Home').default
+import express from 'express'
+import renderer from './helpers/renderer'
 const app = express()
 
-app.get('/', (req, res) => {
-    const content = renderToString(<Home />)
+app.use(express.static('public'))
 
-    res.send(content)
+app.get('*', (req, res) => {
+    res.send(renderer(req))
 })
 
 app.listen(3000, () => {
